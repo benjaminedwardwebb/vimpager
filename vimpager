@@ -115,6 +115,11 @@ main() {
                 shift
                 no_pass_thru=1
                 ;;
+            --startuptime)
+                shift
+                vim_options="$vim_options --startuptime $1"
+                shift
+                ;;
             --)
                 shift
                 break
@@ -661,6 +666,7 @@ With no [1;35mFILE[0m, or when [1;35mFILE[0m is [1;35m-[0m, read standard 
   [1m+F[0m                                 Follow file, like tail -f or less +F
   [1m-N, --LINE-NUMBERS[0m                 Show line numbers.
   [1m-s[0m                                 Squeeze multiple blank lines into one.
+  [1m--startuptime [1;35mFILE[0m                 Write startup times to a file. See ':help startuptime'.
   [1m--passthrough[0m                      If files fit on screen, print them with highlighting (DEFAULT.)
   [1m--force-passthrough[0m                Always print the files with highlighting, don't invoke pager.
   [1m--no-passthrough[0m                   Never print the files, always invoke pager.

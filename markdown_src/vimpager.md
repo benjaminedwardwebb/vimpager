@@ -352,6 +352,11 @@ Use alternate .vimrc or .vimpagerrc.
 Squeeze blank lines into a single blank line. GNU man passes this option to
 /usr/bin/pager.
 
+## --startuptime file
+
+Writes startup times to a given file, using vim's builtin command line option.
+See `:help startuptime` for details.
+
 ## --passthrough
 
 If files fit on the screen, print them with syntax highlighting using vimcat
